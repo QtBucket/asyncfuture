@@ -30,5 +30,5 @@ script:
     - mkdir build/
     - cd build
     - run-unittests ../tests/asyncfutureunittests/asyncfutureunittests.pro
-    - valgrind --num-callers=30 --leak-check=full --track-origins=yes --gen-suppressions=all --suppressions=../tests/asyncfutureunittests/asyncfuture.supp ./asyncfutureunittests
+    - valgrind --num-callers=30 --leak-check=full --track-origins=yes --gen-suppressions=all --error-exitcode --suppressions=../tests/asyncfutureunittests/asyncfuture.supp ./asyncfutureunittests
 
